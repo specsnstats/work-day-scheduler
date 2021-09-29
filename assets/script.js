@@ -4,8 +4,9 @@ var saveButtonEl = $("button")
 var allTextBoxesEl = $("input")
 var day = moment().format('dddd');
 var hour = moment().hours()
-
-console.log(day);
+var dayMonthYear = moment().format("MMM Do YY"); 
+var wholeTime = (day + ", " + dayMonthYear)
+document.getElementById("current-day").innerHTML = wholeTime
 
 // text El's
 var box9amTextEl = $("#9am-text")
